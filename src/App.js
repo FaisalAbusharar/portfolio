@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import './App.css'; // Import your CSS file
+import background from "./images/second.png";
 
 function App() {
+  const [showIcons, setShowIcons] = useState(false);
+
+  // Use useEffect to trigger the animation when the component mounts
+  useEffect(() => {
+    // Add a slight delay to give the page time to render
+    setTimeout(() => {
+      setShowIcons(true);
+    }, 500); // Adjust the delay time as needed
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <body>
+      <img id="img" src={background} alt="background"></img>
+      <div id="min-div">
+        <h1 id="title-name" className={showIcons ? 'move-up' : ''}>
+          FAISAL ANAS
+        </h1>
+        {showIcons && (
+          <div className="social-icons">
+            {/* Replace the logos with hyperlinks */}
+            <a href="https://github.com/VoidyCD?tab=repositories" target="_blank" rel="noopener noreferrer">My Github</a>
+            <a href="YOUR_DISCORD_PROFILE_LINK_HERE" target="_blank" rel="noopener noreferrer">My Discord</a>
+          </div>
+        )}
+      </div>
+    </body>
   );
 }
 
