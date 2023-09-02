@@ -1,0 +1,74 @@
+/* Import the Orbitron font for the title */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  overflow: hidden;
+  background-size: cover;
+  height: 100vh;
+}
+
+#min-div {
+  position: absolute;
+  top: 30%;
+  left: 5%; /* Adjust the left property to move the text to the left */
+  color: white;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+#title-name {
+  text-align: center;
+  color: #4c3a6b;
+  font-size: 80px;
+  padding: 10px;
+  font-weight: 900;
+  font-family: 'Source Code Pro', monospace;
+  transition: transform 2s ease-in-out;
+}
+
+#subtitle {
+  text-align: center;
+  color: #4c3a6b;
+  font-size: 30px;
+  padding: 0px;
+  font-weight: 100; /* Apply thin style */
+  font-family: 'Source Code Pro', monospace;
+  transition: transform 2s ease-in-out;
+  top: 506%; /* Adjust the top property to move the subtitle closer to the title */
+}
+
+#img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  opacity: 0.7;
+}
+
+/* New styles for the animation */
+.move-up {
+  transform: translateY(-50px);
+}
+
+/* App.css */
+.background-container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom left, #e2748b 50%, #74e3a4 50%);
+  overflow: hidden;
+  position: relative;
+}
+
+#min-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 10px;
+}
+/* ... (other styles) */
