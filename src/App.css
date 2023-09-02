@@ -1,12 +1,16 @@
+/* Import the Orbitron font for the title */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+
+/* Import a modern/thin font for the socials text (Example: Roboto Thin) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 body {
   font-family: 'Orbitron', sans-serif;
-  margin: 0; /* Remove default margin to ensure full page coverage */
-  overflow: hidden; /* Hide overflow to prevent scrollbars */
+  margin: 0;
+  overflow: hidden;
   background: url('./images/background2.png') no-repeat center center fixed;
-  background-size: cover; /* Ensure the background image covers the whole screen */
-  height: 100vh; /* Set the body height to the viewport height */
+  background-size: cover;
+  height: 100vh;
 }
 
 #min-div {
@@ -23,7 +27,9 @@ body {
   text-shadow: 5px 5px black;
   font-size: 50px;
   padding: 10px;
-  transition: transform 0.5s ease-in-out; /* Add transition for text animation */
+  font-weight: 900; /* Apply thick/bold style */
+  font-family: 'Orbitron', sans-serif; /* Ensure Orbitron font for title */
+  transition: transform 0.5s ease-in-out;
 }
 
 #img {
@@ -49,9 +55,13 @@ body {
   transition: opacity 0.5s ease-in-out;
 }
 
-.social-icons img {
-  width: 30px;
-  height: 30px;
+/* Apply the modern/thin font style to the socials text */
+.social-icons a {
+  font-family: 'Roboto', sans-serif; /* Use Roboto Thin font for socials text */
+  font-weight: 100; /* Apply thin style */
+  font-size: 18px; /* Adjust font size as needed */
+  color: white; /* Set the text color */
+  text-decoration: none; /* Remove underlines from links */
 }
 
 .show-icons {

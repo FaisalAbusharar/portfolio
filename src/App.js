@@ -24,7 +24,7 @@ function App() {
           <div className="social-icons">
             {/* Replace the logos with hyperlinks */}
             <a href="https://github.com/VoidyCD?tab=repositories" target="_blank" rel="noopener noreferrer">My Github</a>
-            <a href="YOUR_DISCORD_PROFILE_LINK_HERE" target="_blank" rel="noopener noreferrer">My Discord</a>
+            <a href="https://www.youtube.com/channel/UC4ZEJ6S7L__oWlt5v5jiFMg" target="_blank" rel="noopener noreferrer">My Youtube</a>
           </div>
         )}
       </div>
