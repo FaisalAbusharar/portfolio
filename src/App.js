@@ -13,10 +13,17 @@ function App() {
     }, 500); // Adjust the delay time as needed
   }, []);
 
+  const handleContactClick = () => {
+    // Open the user's default email client with a pre-filled email
+    window.location.href = 'mailto:voidycodes@gmail.com';
+  };
+
   return (
     <div className="background-container">
       <NavigationBar />
       <div id="min-div">
+
+        
         <h1 id="title-name" className={showInfo ? 'move-up' : ''}>
           Yo, I'm Faisal
         </h1>
@@ -24,14 +31,39 @@ function App() {
           Software Developer in Python & C++
         </h2>
         {showInfo && (
-          <div className="social-links">
-            <a href="https://www.youtube.com/channel/UC4ZEJ6S7L__oWlt5v5jiFMg" target="_blank" rel="noopener noreferrer">
-              <span style={{ backgroundColor: '#74e3a4', top: '20px' }}>You</span><span style={{ backgroundColor: '#d6a12e' }}>tube</span>
-            </a>
-            <a href="https://github.com/VoidyCD?tab=repositories" target="_blank" rel="noopener noreferrer">
-              <span style={{ backgroundColor: '#74e3a4', top: '20px' }}>Git</span><span style={{ backgroundColor: '#d6a12e' }}>hub</span>
-            </a>
-          </div>
+          <>
+            <div className="button-container">
+              <button className="contact-button" onClick={handleContactClick}>
+                Contact Me
+              </button>
+            </div>
+            <div className="social-links">
+              <a
+                href="https://www.youtube.com/channel/UC4ZEJ6S7L__oWlt5v5jiFMg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span style={{ backgroundColor: '#74e3a4', top: '20px' }}>You</span>
+                <span style={{ backgroundColor: '#d6a12e' }}>tube</span>
+              </a>
+              <a
+                href="https://github.com/VoidyCD/portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span style={{ backgroundColor: '#74e3a4', top: '20px' }}>This</span>
+                <span style={{ backgroundColor: '#d6a12e' }}>Project</span>
+              </a>
+              <a
+                href="https://github.com/VoidyCD?tab=repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span style={{ backgroundColor: '#74e3a4', top: '20px' }}>Git</span>
+                <span style={{ backgroundColor: '#d6a12e' }}>hub</span>
+              </a>
+            </div>
+          </>
         )}
       </div>
     </div>

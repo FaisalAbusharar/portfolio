@@ -1,15 +1,17 @@
 /* styles.css */
 
 /* Header styles */
+/* Header styles */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #4d3f70;
-    padding: 10px 20px;
-    color: #e6a240;
-    font-weight: bold;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(77, 63, 112, 0.5); /* Adjust the RGBA values and alpha (0.5 for semi-transparent) */
+  padding: 10px 20px;
+  color: rgba(77, 63, 112, 1);
+  font-weight: bold;
+}
+
   
   /* Logo styles */
   .logo img {
@@ -37,8 +39,9 @@ header {
   
   nav ul li a {
     text-decoration: none;
-    color: #e6a240;
+    color:  rgba(77, 63, 112, 1);
     font-weight: bold;
+    font-size: 25px;
     transition: color 0.3s ease;
   }
   

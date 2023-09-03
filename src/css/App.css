@@ -11,21 +11,22 @@ body {
 }
 
 
-
 /* Styling for the social links */
 .social-links {
   display: flex;
   font-size: 50px !important;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   position: absolute;
   bottom: 0%;
   top: 170%;
   left: 50%;
-  background-color: yellow;
   transform: translateX(-50%);
+  width: 70%;
+  padding: 10px;
 }
 
+/* Initial styling for social links */
 .social-links a {
   text-decoration: none;
   font-size: 30px !important;
@@ -35,46 +36,10 @@ body {
   margin: 0 -.25rem;
   font-size: 20px;
   padding: 0 .25rem;
-  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  line-height: 1.5;
 }
 
 
-/* Nw styles for the animation */
-.move-up {
-  transform: translateY(-50px);
-}
-
-
-#min-div {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  padding: 10px;
-}
-/* ... (other styles) */
-
-
-.yellow-background {
-  background-color: yellow;
-  padding: 0 5px; /* Adjust the padding to control the size of the yellow background */
-}
-
-/* Add this CSS to your existing styles */
-.social-links a span {
-  display: inline-block;
-  transition: background-color .3s ease-in-out;
-}
-
-.social-links a:hover span {
-  background-color: #74e3a4;
-  
-}
-
-.social-links a:hover span:first-child {
-  background-color: #d6a12e;
-}
 
 
 
@@ -99,14 +64,33 @@ body {
   top: 700%; /* Adjust the top property to move the subtitle closer to the title */
 }
 
-#img {
+
+
+/* Nw styles for the animation */
+.move-up {
+  transform: translateY(-50px);
+}
+
+
+#min-div {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: white;
   padding: 10px;
-  opacity: 0.7;
 }
+/* ... (other styles) */
+
+
+.yellow-background {
+  background-color: yellow;
+  padding: 0 5px; /* Adjust the padding to control the size of the yellow background */
+}
+
+
+
+
 
 
 
@@ -119,3 +103,36 @@ body {
   position: relative;
 }
 
+/* Add these styles to your CSS file (App.css) */
+/* Add these styles to your existing CSS file */
+
+.button-container {
+  text-align: center;
+  margin-top: 20px; /* Increase the margin to create more space */
+  position: relative; /* Add relative positioning to the container */
+}
+
+
+
+
+
+
+
+
+    
+
+  .contact-button {
+    background-color: #4c3a6b;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    position: absolute; /* Add absolute positioning to the button */
+    left: 50%; /* Position the button horizontally in the center */
+    transform: translateX(-50%); /* Center the button horizontally */
+  }
+  
+  
