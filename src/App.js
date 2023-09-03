@@ -20,13 +20,20 @@ function App() {
         <h1 id="title-name" className={showInfo ? 'move-up' : ''}>
           Yo, I'm Faisal
         </h1>
-        <div id="subtitle" className={showInfo ? 'move-up' : ''}>
-          Software Developer IN Python / C++
-        </div>
+        <h2 id="subtitle" className={showInfo ? 'move-up' : ''}>
+          Software Developer in Python & C++
+          </h2>
+        {showInfo && (
+          <div style={{backgroundColor: 'yellow'}} className="social-links">
+            <a href="https://www.youtube.com/channel/UC4ZEJ6S7L__oWlt5v5jiFMg" target="_blank" rel="noopener noreferrer">YouTube    </a>
+            <a href="https://github.com/VoidyCD?tab=repositories" target="_blank" rel="noopener noreferrer">‎ ‎ GitHub</a>
+          </div>
+        )}
+
+        
       </div>
     </div>
   );
 }
 
 export default App;
-

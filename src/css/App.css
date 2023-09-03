@@ -19,12 +19,41 @@ body {
   padding: 10px;
 }
 
+/* Styling for the social links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  bottom: 0%;
+  top: 170%;
+  left: 50%;
+  background-color: yellow;
+  transform: translateX(-50%);
+}
+
+.social-links a {
+  text-decoration: none;
+  font-family: 'Source Code Pro', monospace;
+  box-shadow: inset 0 0 0 0 black;
+  color: white;
+  margin: 0 -.25rem;
+  font-size: 20px;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.social-links a:hover {
+  box-shadow: inset 100px 0 0 0 white;
+  color: #54b3d6;
+
+}
+
+
 #title-name {
   text-align: center;
   color: #4c3a6b;
   font-size: 80px;
-  padding: 10px;
-  font-weight: 900;
   font-family: 'Source Code Pro', monospace;
   transition: transform 2s ease-in-out;
 }
@@ -33,11 +62,11 @@ body {
   text-align: center;
   color: #4c3a6b;
   font-size: 30px;
-  padding: 0px;
+  padding-bottom: 10px;
   font-weight: 100; /* Apply thin style */
   font-family: 'Source Code Pro', monospace;
   transition: transform 2s ease-in-out;
-  top: 506%; /* Adjust the top property to move the subtitle closer to the title */
+  top: 700%; /* Adjust the top property to move the subtitle closer to the title */
 }
 
 #img {
@@ -65,10 +94,12 @@ body {
 
 #min-div {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   padding: 10px;
 }
 /* ... (other styles) */
+
+
