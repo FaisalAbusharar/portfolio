@@ -9,7 +9,7 @@ function NavigationBar() {
     <header className="navbar">
       <div className="logo">
         {/* Use the imported logo as the src */}
-        <h2>FAISAL</h2>
+        <h2>FAISAL/VOIDY</h2>
       </div>
       <div className="title">
         <h1>SOFTWARE DEVELOPER</h1>
@@ -17,7 +17,6 @@ function NavigationBar() {
       <nav>
         <ul className="nav-links">
           <li><a href="#home">Home</a></li>
-          <li><a href="#work">Work</a></li>
           <li><a href="#about">About</a></li>
         </ul>
       </nav>

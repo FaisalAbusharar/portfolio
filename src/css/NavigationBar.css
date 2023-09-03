@@ -5,9 +5,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #4d3f70;
     padding: 10px 20px;
-    color: white;
+    color: #e6a240;
+    font-weight: bold;
   }
   
   /* Logo styles */
@@ -36,12 +37,12 @@ header {
   
   nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #e6a240;
     font-weight: bold;
     transition: color 0.3s ease;
   }
   
   nav ul li a:hover {
-    color: #FF5733; /* Change the color on hover */
+    color: #e6a240;/* Change the color on hover */
   }
   

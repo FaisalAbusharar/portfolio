@@ -15,22 +15,24 @@ function App() {
 
   return (
     <div className="background-container">
-      {/* <NavigationBar /> */}
+      <NavigationBar />
       <div id="min-div">
         <h1 id="title-name" className={showInfo ? 'move-up' : ''}>
           Yo, I'm Faisal
         </h1>
         <h2 id="subtitle" className={showInfo ? 'move-up' : ''}>
           Software Developer in Python & C++
-          </h2>
+        </h2>
         {showInfo && (
-          <div style={{backgroundColor: 'yellow'}} className="social-links">
-            <a href="https://www.youtube.com/channel/UC4ZEJ6S7L__oWlt5v5jiFMg" target="_blank" rel="noopener noreferrer">YouTube    </a>
-            <a href="https://github.com/VoidyCD?tab=repositories" target="_blank" rel="noopener noreferrer">‎ ‎ GitHub</a>
+          <div className="social-links">
+            <a href="https://www.youtube.com/channel/UC4ZEJ6S7L__oWlt5v5jiFMg" target="_blank" rel="noopener noreferrer">
+              <span style={{ backgroundColor: '#74e3a4', top: '20px' }}>You</span><span style={{ backgroundColor: '#d6a12e' }}>tube</span>
+            </a>
+            <a href="https://github.com/VoidyCD?tab=repositories" target="_blank" rel="noopener noreferrer">
+              <span style={{ backgroundColor: '#74e3a4', top: '20px' }}>Git</span><span style={{ backgroundColor: '#d6a12e' }}>hub</span>
+            </a>
           </div>
         )}
-
-        
       </div>
     </div>
   );
