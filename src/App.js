@@ -38,31 +38,32 @@ function App() {
               </button>
             </div>
             <div className="social-links">
-              <a
-                href="https://www.youtube.com/channel/UC4ZEJ6S7L__oWlt5v5jiFMg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span style={{ backgroundColor: '#74e3a4', top: '20px' }}>You</span>
-                <span style={{ backgroundColor: '#d6a12e' }}>tube</span>
-              </a>
-              <a
-                href="https://github.com/VoidyCD/portfolio"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span style={{ backgroundColor: '#74e3a4', top: '20px' }}>This</span>
-                <span style={{ backgroundColor: '#d6a12e' }}>Project</span>
-              </a>
-              <a
-                href="https://github.com/VoidyCD?tab=repositories"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span style={{ backgroundColor: '#74e3a4', top: '20px' }}>Git</span>
-                <span style={{ backgroundColor: '#d6a12e' }}>hub</span>
-              </a>
-            </div>
+  <a
+    href="https://www.youtube.com/channel/UC4ZEJ6S7L__oWlt5v5jiFMg"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span className='firstPart'>You</span>
+    <span className='secondPart'>tube</span>
+  </a>
+  <a
+    href="https://github.com/VoidyCD/portfolio"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span className='firstPart'>This</span>
+    <span className='secondPart'>Project</span>
+  </a>
+  <a
+    href="https://github.com/VoidyCD?tab=repositories"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span className='firstPart'>Git</span>
+    <span className='secondPart'>hub</span>
+  </a>
+</div>
+
           </>
         )}
       </div>

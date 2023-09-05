@@ -26,8 +26,10 @@ body {
   padding: 10px;
 }
 
-/* Initial styling for social links */
+/* Initial styles for social links with green-yellow background */
 .social-links a {
+  /* ... (your existing styles) */
+  position: relative; /* Add relative positioning to the link container */
   text-decoration: none;
   font-size: 30px !important;
   font-family: 'Source Code Pro', monospace;
@@ -37,10 +39,36 @@ body {
   font-size: 20px;
   padding: 0 .25rem;
   line-height: 1.5;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Adjust the transition property */
+}
+
+/* Styling for the green-yellow background on the first part */
+.social-links a span:first-child {
+  background-color: #74e3a4; /* Green background color */
+}
+
+/* Styling for the yellow-green background on the second part */
+.social-links a span:last-child {
+  background-color: #d6a12e; /* Yellow background color */
+}
+
+/* Add a hover effect for social links */
+.social-links a:hover span:first-child {
+  background-color: #d6a12e; /* Change the green to yellow on hover */
+}
+
+.social-links a:hover span:last-child {
+  background-color: #74e3a4; /* Change the yellow to green on hover */
 }
 
 
-
+.social-links {
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: #54b3d6;
+  padding: 0 .25rem;
+  margin: 0 -.25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
 
 
 
@@ -113,17 +141,10 @@ body {
 }
 
 
-
-
-
-
-
-
-    
-
   .contact-button {
     background-color: #4c3a6b;
     color: white;
+    transition: background-color 0.3s ease-in-out; /* Add a transition for background color change */
     font-family: 'Source Code Pro', monospace;
     font-size: 20px;
     border: none;
@@ -135,4 +156,6 @@ body {
     transform: translateX(-50%); /* Center the button horizontally */
   }
   
-  
+.contact-button:hover {
+    background-color: #ffae00; /* Change the background color on hover (you can use any color you like) */
+  }
