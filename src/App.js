@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './css/App.css'; // Import your CSS file
 import NavigationBar from './NavigationBar';
+import { Router, Switch, Route } from "react-router-dom";
 
 function App() {
   const [showInfo, setShowInfo] = useState(false);
@@ -20,7 +21,7 @@ function App() {
 
   return (
     <div className="background-container">
-      <NavigationBar />
+      {/* <NavigationBar /> */}
       <div id="min-div">
 
         
@@ -30,9 +31,17 @@ function App() {
         <h2 id="subtitle" className={showInfo ? 'move-up' : ''}>
           Software Developer in Python & C++
         </h2>
+
+        <button className="projects-button" onClick={() => history.push('/projects')} >
+                Projects
+          </button>
+
+        
+
         {showInfo && (
           <>
             <div className="button-container">
+            
               <button className="contact-button" onClick={handleContactClick}>
                 Contact Me
               </button>
