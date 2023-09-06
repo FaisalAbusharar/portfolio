@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './css/App.css'; // Import your CSS file
-import NavigationBar from './NavigationBar';
-import { Router, Switch, Route } from "react-router-dom";
 
 function App() {
   const [showInfo, setShowInfo] = useState(false);
@@ -19,6 +17,11 @@ function App() {
     window.location.href = 'mailto:voidycodes@gmail.com';
   };
 
+  const handleProjectsClick = () => {
+    window.location.href = 'https://github.com/VoidyCD?tab=repositories'
+  }
+
+
   return (
     <div className="background-container">
       {/* <NavigationBar /> */}
@@ -32,7 +35,7 @@ function App() {
           Software Developer in Python & C++
         </h2>
 
-        <button className="projects-button" onClick={() => history.push('/projects')} >
+        <button onClick={handleProjectsClick} className="projects-button" >
                 Projects
           </button>
 
