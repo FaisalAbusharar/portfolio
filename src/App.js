@@ -32,7 +32,7 @@ function App() {
           Yo, I'm Faisal
         </h1>
         <h2 id="subtitle" className={showInfo ? 'move-up' : ''}>
-          Software Developer in Python & C++
+          Software Developer in Python , C++ & Javascript
         </h2>
 
         <button onClick={handleProjectsClick} className="projects-button" >
@@ -67,7 +67,7 @@ function App() {
     <span className='secondPart'>Project</span>
   </a>
   <a
-    href="https://github.com/VoidyCD?tab=repositories"
+    href="https://github.com/VoidyCD"
     target="_blank"
     rel="noopener noreferrer"
   >
