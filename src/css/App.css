@@ -10,7 +10,6 @@ body {
   height: 100vh;
 }
 
-
 /* Styling for the social links */
 .social-links {
   display: flex;
@@ -28,8 +27,7 @@ body {
 
 /* Initial styles for social links with green-yellow background */
 .social-links a {
-  /* ... (your existing styles) */
-  position: relative; /* Add relative positioning to the link container */
+  position: relative;
   text-decoration: none;
   font-size: 30px !important;
   font-family: 'Source Code Pro', monospace;
@@ -39,7 +37,7 @@ body {
   font-size: 20px;
   padding: 0 .25rem;
   line-height: 1.5;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Adjust the transition property */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 /* Styling for the green-yellow background on the first part */
@@ -61,7 +59,6 @@ body {
   background-color: #74e3a4; /* Change the yellow to green on hover */
 }
 
-
 .social-links {
   box-shadow: inset 0 0 0 0 #54b3d6;
   color: #54b3d6;
@@ -69,9 +66,6 @@ body {
   margin: 0 -.25rem;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
-
-
-
 
 #title-name {
   text-align: center;
@@ -86,10 +80,9 @@ body {
   color: #4c3a6b;
   font-size: 30px;
   padding-bottom: 10px;
-  font-weight: 100; /* Apply thin style */
+  font-weight: 100;
   font-family: 'Source Code Pro', monospace;
   transition: transform 2s ease-in-out;
-  top: 700%; /* Adjust the top property to move the subtitle closer to the title */
 }
 
 #info-1 {
@@ -97,20 +90,15 @@ body {
   color: #4c3a6b;
   font-size: 30px;
   padding-bottom: 10px;
-  font-weight: 100; /* Apply thin style */
+  font-weight: 100;
   font-family: 'Source Code Pro', monospace;
   transition: transform 2s ease-in-out;
-  top: 700%; /* Adjust the top property to move the subtitle closer to the title */
 }
 
-
-
-
-/* Nw styles for the animation */
+/* New styles for the animation */
 .move-up {
   transform: translateY(-50px);
 }
-
 
 #min-div {
   position: absolute;
@@ -120,19 +108,11 @@ body {
   color: white;
   padding: 10px;
 }
-/* ... (other styles) */
-
 
 .yellow-background {
   background-color: yellow;
-  padding: 0 5px; /* Adjust the padding to control the size of the yellow background */
+  padding: 0 5px; 
 }
-
-
-
-
-
-
 
 /* App.css */
 .background-container {
@@ -148,46 +128,72 @@ body {
 
 .button-container {
   text-align: center;
-  margin-top: 20px; /* Increase the margin to create more space */
-  position: relative; /* Add relative positioning to the container */
+  margin-top: 20px; 
+  position: relative; 
 }
 
+.contact-button {
+  background-color: #4c3a6b;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 20px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  position: absolute; 
+  left: 0%; 
+  transform: translateX(-50%); 
+}
 
-  .contact-button {
-    background-color: #4c3a6b;
-    color: white;
-    transition: background-color 0.3s ease-in-out; /* Add a transition for background color change */
-    font-family: 'Source Code Pro', monospace;
-    font-size: 20px;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    position: absolute; /* Add absolute positioning to the button */
-    left: 0%; /* Position the button horizontally in the center */
-    transform: translateX(-50%); /* Center the button horizontally */
-  }
-  
 .contact-button:hover {
-    background-color: #ffae00; /* Change the background color on hover (you can use any color you like) */
+  background-color: #ffae00; 
+}
+
+.projects-button {
+  background-color: #4c3a6b;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 20px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  position: absolute; 
+  left: 100%; 
+  transform: translateX(-50%); 
+}
+
+.projects-button:hover {
+  background-color: #ffae00; 
+}
+
+@media screen and (max-width: 600px) {
+  #title-name {
+    font-size: 8vw;
   }
 
-  
-.projects-button {
-    background-color: #4c3a6b;
-    color: white;
-    transition: background-color 0.3s ease-in-out; /* Add a transition for background color change */
-    font-family: 'Source Code Pro', monospace;
-    font-size: 20px;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    position: absolute; /* Add absolute positioning to the button */
-    left: 100%; /* Position the button horizontally in the center */
-    transform: translateX(-50%); /* Center the button horizontally */
+  #subtitle,
+  #info-1 {
+    font-size: 4vw;
   }
-  
-.projects-button:hover {
-    background-color: #ffae00; /* Change the background color on hover (you can use any color you like) */
+
+  .button-container {
+    display: flex;
+    margin-top: 20px;
   }
+
+  .contact-button, .projects-button {
+    margin: 0 10px;
+  }
+
+  .social-links {
+    font-size: 4vw;
+  }
+}
+
+meta[name="viewport"] {
+  content: width=device-width, initial-scale=1;
+}
