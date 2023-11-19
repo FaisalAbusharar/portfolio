@@ -32,7 +32,7 @@ function App() {
           Yo, I'm Faisal
         </h1>
         <h2 id="subtitle" className={showInfo ? 'move-up' : ''}>
-          Software Developer in Python , C++ & Javascript
+          Software Developer in Python , C# & Javascript
         </h2>
 
         <button onClick={handleProjectsClick} className="projects-button" >
