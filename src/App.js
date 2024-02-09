@@ -67,7 +67,7 @@ function App() {
     <span className='secondPart'>Project</span>
   </a>
   <a
-    href="https://github.com/VoidyCD"
+    href="https://github.com/FaisalAbusharar"
     target="_blank"
     rel="noopener noreferrer"
   >
