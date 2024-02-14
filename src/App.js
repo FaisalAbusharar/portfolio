@@ -18,7 +18,7 @@ function App() {
   };
 
   const handleProjectsClick = () => {
-    window.location.href = 'https://github.com/VoidyCD?tab=repositories'
+    window.location.href = 'https://github.com/FaisalAbusharar?tab=repositories'
   }
 
 
@@ -59,7 +59,7 @@ function App() {
     <span className='secondPart'>tube</span>
   </a>
   <a
-    href="https://github.com/VoidyCD/portfolio"
+    href="https://github.com/FaisalAbusharar/portfolio"
     target="_blank"
     rel="noopener noreferrer"
   >
