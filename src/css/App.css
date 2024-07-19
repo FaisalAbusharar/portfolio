@@ -1,13 +1,12 @@
-/* Import the Orbitron font for the title */
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 body {
-  font-family: 'Orbitron', sans-serif;
   margin: 0;
   overflow: hidden;
   background-size: cover;
-  height: 100vh;
+  font-family: "Exo" sans-serif;
 }
 
 /* Styling for the social links */
@@ -17,12 +16,12 @@ body {
   justify-content: center;
   gap: 25px;
   position: absolute;
-  bottom: 0%;
-  top: 150%;
+  top: 125%;
   left: 50%;
   transform: translateX(-50%);
   width: 70%;
   padding: 10px;
+  margin-bottom: 500px;
 }
 
 /* Initial styles for social links with green-yellow background */
@@ -38,6 +37,10 @@ body {
   padding: 0 .25rem;
   line-height: 1.5;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-links {
+  transition: background-color 3s ease, color 0.3s ease-in-out, background 3s ease-in-out;
 }
 
 /* Styling for the green-yellow background on the first part */
@@ -68,11 +71,16 @@ body {
 }
 
 #title-name {
-  text-align: center;
+
+  text-align: center; /* Centers the text horizontally */
   color: #c9c3d4;
   font-size: 80px;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
   transition: transform 2s ease-in-out;
+  margin-bottom: auto; /* Adds the mb-auto equivalent */
+  margin-top: 2rem; /* Adds the mt-8 equivalent */
+  
 }
 
 #subtitle {
@@ -81,7 +89,6 @@ body {
   font-size: 30px;
   padding-bottom: 10px;
   font-weight: 100;
-  font-family: 'Source Code Pro', monospace;
   transition: transform 2s ease-in-out;
 }
 
@@ -91,7 +98,6 @@ body {
   font-size: 30px;
   padding-bottom: 10px;
   font-weight: 100;
-  font-family: 'Source Code Pro', monospace;
   transition: transform 2s ease-in-out;
 }
 
@@ -102,7 +108,7 @@ body {
 
 #min-div {
   position: relative;
-  top: 55%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -118,7 +124,7 @@ body {
 .background-container {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to bottom left, #5d17cf 50%, #18171a 50%);
+  background: linear-gradient(to bottom, #5d17cf 45%, #18171a 40%);
   overflow: hidden;
   position: relative;
 }
@@ -135,7 +141,7 @@ body {
   background-color: #c9c3d4;
   color: black;
   transition: background-color 0.3s ease-in-out;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Exo" sans-serif;
   font-size: 20px;
   border: none;
   padding: 10px 20px;
@@ -150,20 +156,7 @@ body {
   background-color: #ffae00; 
 }
 
-.projects-button {
-  background-color: #c9c3d4;
-  color: black;
-  transition: background-color 0.3s ease-in-out;
-  font-family: 'Source Code Pro', monospace;
-  font-size: 20px;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-  position: absolute;
-  right: 50%;
-  transform: translateX(50%); 
-}
+
 
 .projects-button:hover {
   background-color: #ffae00; 

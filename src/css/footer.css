@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap');
+
+
+body {
+  font-family: "Exo" sans-serif;
+}
+
+/* Gradient Texts */
+#gradientSub {
+  font-weight: bold; 
+  background: linear-gradient(to right, #6625fc, rgb(255, 3, 184), rgb(60, 0, 255));
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  animation: gradientAnimation 6s linear infinite; 
+  display: inline-block; 
+}
+
+#gradientButtonText {
+  font-weight: bold; 
+  background: linear-gradient(to right, #6625fc, rgb(255, 3, 184), rgb(60, 0, 255));
+  background-size: 300% 100%;
+  background-clip: text;
+  animation: gradientAnimation 6s linear infinite; 
+  display: inline-block; 
+}
+
+#gradientButtonTextSub {
+  font-weight: bold; 
+  background: linear-gradient(to right, #878787, rgb(255, 255, 255), rgb(203, 203, 203));
+  background-size: 300% 100%;
+  background-clip: text;
+  animation: gradientAnimation 6s linear infinite; 
+  display: inline-block; 
+}
+
+
+#gradientGold {
+  font-weight: bold; 
+  background: linear-gradient(to right,#FFD700, #ff8400, #ffa200);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  animation: gradientAnimation 6s linear infinite; 
+  display: inline-block; 
+}
+
+#gradientSubSub {
+  font-weight: bold; 
+  background: linear-gradient(to right,#004af8, rgb(3, 217, 255), rgb(0, 21, 255));
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  animation: gradientAnimation 6s linear infinite; 
+  display: inline-block; 
+}
+
+/* Keyframes */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+/* Footer */
+.footerContainer {
+  background: linear-gradient(to top, #5d17cf 5%, #18171a 100%);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.credit-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left-credit, .center-credit, .right-credit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.left-credit {
+  align-items: flex-start;
+}
+
+.center-credit {
+  align-items: center;
+}
+
+.right-credit {
+  align-items: flex-end;
+}
+
+.button-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.button-list li {
+  margin: 0 10px;
+  padding: 0;
+}
+
+.button-list li a {
+  text-decoration: none;
+}
+
+
+/* Extra Text Decoration */
+#hyperlink {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  background: linear-gradient(to right, #0067f7, rgb(3, 179, 255), rgb(0, 8, 255));
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-decoration: none; 
+  transition: transform 0.3s ease, text-decoration 0.3s ease; 
+}
+
+#hyperlink::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px; 
+  background: linear-gradient(to right, #0067f7, rgb(3, 179, 255), rgb(0, 8, 255));
+  transition: height 0.3s ease; 
+}
+
+#hyperlink:hover {
+  transform: scale(0.97); 
+  text-decoration: underline; 
+}
+
+#hyperlink:hover::after {
+  height: 0;
+}
+
+#warning {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to bottom, #ff0000, rgb(252, 103, 103));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Insite Hyperlink Style */
+#hyperlink-insite {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  background: linear-gradient(to top, #0067f7, rgb(3, 179, 255), rgb(0, 8, 255));
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-decoration: none; 
+  transform: scale(0.99); 
+  transition: transform 0.3s ease, text-decoration 0.3s ease; 
+}
+
+#hyperlink-insite:hover {
+  transform: scale(0.97); 
+  text-decoration: underline; 
+}
+
+/* MISC */
+#buffer {
+  margin-top: 45px;
+}

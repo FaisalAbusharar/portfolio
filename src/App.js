@@ -1,81 +1,62 @@
 import React, { useState, useEffect } from 'react';
 import './css/App.css'; // Import your CSS file
+import './components/buttonStyles.tsx';
+import StyledButton from './components/buttonStyles.tsx';
+import Footer from './components/footer.jsx';
+import './css/footer.css'
 
 function App() {
   const [showInfo, setShowInfo] = useState(false);
 
-  // Use useEffect to trigger the animation when the component mounts
   useEffect(() => {
-    // Add a slight delay to give the page time to render
     setTimeout(() => {
       setShowInfo(true);
-    }, 500); // Adjust the delay time as needed
+    }, 500);
   }, []);
 
   const handleContactClick = () => {
-    // Open the user's default email client with a pre-filled email
     window.location.href = 'mailto:voidycodes@gmail.com';
   };
 
   const handleProjectsClick = () => {
-    window.location.href = 'https://github.com/FaisalAbusharar?tab=repositories'
-  }
+    window.location.href = 'https://github.com/FaisalAbusharar?tab=repositories';
+  };
 
+  const headerButtons = [
+    <li key="youtube">
+      <a href="https://www.youtube.com/channel/UC4ZEJ6S7L__oWlt5v5jiFMg" target="_blank" rel="noopener noreferrer">
+      <StyledButton><span id='gradientButtonTextSub'>Youtube</span></StyledButton>
+      </a>
+    </li>,
+    <li key="this-project">
+      <a href="https://github.com/FaisalAbusharar/portfolio" target="_blank" rel="noopener noreferrer">
+      <StyledButton><span id='gradientButtonTextSub'>This Project</span></StyledButton>
+      </a>
+    </li>,
+    <li key="github">
+      <a href="https://github.com/FaisalAbusharar" target="_blank" rel="noopener noreferrer">
+        <StyledButton><span id='gradientButtonTextSub'>Github</span></StyledButton>
+      </a>
+    </li>,
+  ];
 
   return (
     <div className="background-container">
       {/* <NavigationBar /> */}
+      <Footer buttonComponents={headerButtons}></Footer>
       <div id="min-div">
-
-        
-        <h1 id="title-name" className={showInfo ? 'move-up' : ''}>
-          Yo, I'm Faisal
-        </h1>
+      <h1 id="title-name" className={showInfo ? 'move-up' : ''}>
+        Yo, I'm <span id="gradientSubSub">Faisal</span>
+      </h1>
         <h2 id="subtitle" className={showInfo ? 'move-up' : ''}>
-          Software Developer in Python , C# & Javascript
+          <span id="gradientSub">Software Developer</span><span id="gradientGold">‎ ‎ Python , C# & Javascript</span>
         </h2>
-
-        <button onClick={handleProjectsClick} className="projects-button" >
-                Projects
-          </button>
-
-        
-
         {showInfo && (
           <>
             <div className="button-container">
-            
-              <button className="contact-button" onClick={handleContactClick}>
-                Contact Me
-              </button>
+              <StyledButton onClick={handleContactClick}><span id="gradientButtonText" >Contact Me</span></StyledButton>
             </div>
-            <div className="social-links">
-  <a
-    href="https://www.youtube.com/channel/UC4ZEJ6S7L__oWlt5v5jiFMg"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <span className='firstPart'>You</span>
-    <span className='secondPart'>tube</span>
-  </a>
-  <a
-    href="https://github.com/FaisalAbusharar/portfolio"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <span className='firstPart'>This</span>
-    <span className='secondPart'>Project</span>
-  </a>
-  <a
-    href="https://github.com/FaisalAbusharar"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <span className='firstPart'>Git</span>
-    <span className='secondPart'>hub</span>
-  </a>
-</div>
-
+            <div className="social-links"></div>
           </>
         )}
       </div>
